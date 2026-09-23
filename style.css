@@ -5,25 +5,32 @@
    ========================================================================== */
 
 :root {
-  /* Color Palette */
-  --bg-primary: #070a13;
-  --bg-secondary: #0c1220;
-  --bg-card: rgba(16, 24, 40, 0.75);
-  --bg-card-hover: rgba(22, 33, 56, 0.85);
+  /* Color Palette — Purple, Electric Blue & White */
+  --bg-primary: #060813;
+  --bg-secondary: #0b1022;
+  --bg-card: rgba(14, 20, 42, 0.75);
+  --bg-card-hover: rgba(24, 34, 68, 0.88);
   
+  --accent-purple: #a855f7;
+  --accent-purple-hover: #9333ea;
+  --accent-purple-glow: rgba(168, 85, 247, 0.35);
+
   --accent-cyan: #00e5ff;
   --accent-cyan-hover: #00b4d8;
   --accent-cyan-glow: rgba(0, 229, 255, 0.35);
+
+  --accent-blue: #3b82f6;
+  --accent-blue-glow: rgba(59, 130, 246, 0.3);
   
   --accent-emerald: #10b981;
   --accent-emerald-glow: rgba(16, 185, 129, 0.3);
   
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-glow: rgba(0, 229, 255, 0.3);
+  --border-subtle: rgba(168, 85, 247, 0.15);
+  --border-glow: rgba(0, 229, 255, 0.4);
   
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
   
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -1089,4 +1096,240 @@ h1, h2, h3, h4 {
   .download-card-wrapper {
     padding: 40px 20px;
   }
+}
+
+/* ==========================================================================
+   PURE CSS CUSTOM ICONS (NO SVG, NO EMOJI)
+   ========================================================================== */
+.css-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  vertical-align: middle;
+}
+
+/* Download Tray + Down Arrow */
+.css-icon-download {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.css-icon-download::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 9px;
+  width: 2px;
+  height: 9px;
+  background: currentColor;
+}
+.css-icon-download::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  width: 6px;
+  height: 6px;
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
+}
+.css-icon-download .tray {
+  position: absolute;
+  bottom: 2px;
+  left: 3px;
+  width: 14px;
+  height: 4px;
+  border-bottom: 2px solid currentColor;
+  border-left: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  border-radius: 1px;
+}
+
+/* Archive / Zip Box */
+.css-icon-zip {
+  width: 20px;
+  height: 18px;
+  border: 2px solid currentColor;
+  border-radius: 3px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.css-icon-zip::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: repeating-linear-gradient(to bottom, currentColor 0, currentColor 2px, transparent 2px, transparent 4px);
+  transform: translateX(-50%);
+}
+
+/* Lightning Bolt */
+.css-icon-bolt {
+  width: 22px;
+  height: 26px;
+  background: linear-gradient(135deg, #00e5ff 0%, #a855f7 100%);
+  clip-path: polygon(55% 0%, 100% 0%, 45% 45%, 90% 45%, 10% 100%, 35% 55%, 5% 55%);
+  display: inline-block;
+}
+
+/* Shield Icon */
+.css-icon-shield {
+  width: 22px;
+  height: 26px;
+  background: linear-gradient(180deg, #10b981 0%, #059669 100%);
+  clip-path: polygon(50% 0%, 100% 15%, 100% 65%, 50% 100%, 0% 65%, 0% 15%);
+  display: inline-block;
+}
+
+/* Microchip / Java Engine */
+.css-icon-cpu {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #a855f7;
+  border-radius: 4px;
+  background: #14112c;
+  position: relative;
+  display: inline-block;
+}
+.css-icon-cpu::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background: #a855f7;
+  border-radius: 2px;
+}
+
+/* Gamepad Controller */
+.css-icon-gamepad {
+  width: 28px;
+  height: 18px;
+  border: 2px solid #38bdf8;
+  border-radius: 9px;
+  position: relative;
+  background: #0c1c2e;
+  display: inline-block;
+}
+.css-icon-gamepad::before {
+  content: '+';
+  position: absolute;
+  left: 4px;
+  top: -2px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #38bdf8;
+  line-height: 1;
+}
+.css-icon-gamepad::after {
+  content: '::';
+  position: absolute;
+  right: 4px;
+  top: 1px;
+  font-size: 10px;
+  letter-spacing: -2px;
+  color: #00e5ff;
+}
+
+/* Package / Box */
+.css-icon-box {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #f59e0b;
+  border-radius: 3px;
+  position: relative;
+  background: #26190a;
+  display: inline-block;
+}
+.css-icon-box::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #f59e0b;
+}
+
+/* Speedometer / Gauge (Low Spec) */
+.css-icon-gauge {
+  width: 26px;
+  height: 15px;
+  border: 2px solid #ec4899;
+  border-bottom: none;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+  display: inline-block;
+}
+.css-icon-gauge::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 2px;
+  height: 9px;
+  background: #ec4899;
+  transform-origin: bottom center;
+  transform: rotate(35deg);
+}
+
+/* Clean Checkmark */
+.css-icon-check {
+  display: inline-block;
+  width: 6px;
+  height: 11px;
+  border-bottom: 2px solid #10b981;
+  border-right: 2px solid #10b981;
+  transform: rotate(45deg);
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+/* Play Arrow */
+.css-icon-play {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid currentColor;
+  margin-left: 6px;
+}
+
+/* Plus Icon for Accordion */
+.css-icon-plus {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+.css-icon-plus::before,
+.css-icon-plus::after {
+  content: '';
+  position: absolute;
+  background: currentColor;
+  transition: transform 0.25s ease;
+}
+.css-icon-plus::before {
+  top: 6px;
+  left: 0;
+  width: 14px;
+  height: 2px;
+}
+.css-icon-plus::after {
+  top: 0;
+  left: 6px;
+  width: 2px;
+  height: 14px;
+}
+.faq-item.active .css-icon-plus::after {
+  transform: rotate(90deg);
 }
