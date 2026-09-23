@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>XerLauncher — The Purest Minecraft 1.21.1 Fabric & NeoForge Launcher</title>
+  <meta name="title" content="XerLauncher — The Purest Minecraft 1.21.1 Fabric & NeoForge Launcher">
+  <meta name="description" content="Download XerLauncher v2.0 by Mayank Mandrai. Ultra-lightweight, 100% official, zero-bloat Minecraft launcher with instant support for 1.21.1 Fabric & NeoForge. 0% background RAM.">
+  <meta name="keywords" content="xerlauncher, xer launcher, download xerlauncher, minecraft launcher, minecraft 1.21.1 launcher, fabric 1.21.1 launcher, neoforge launcher, lightweight minecraft launcher, mayank mandrai, free minecraft launcher, zero bloat launcher">
+  <meta name="author" content="Mayank Mandrai">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#00e5ff">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xerlauncher.vercel.app/">
+  <meta property="og:title" content="XerLauncher — The Purest Minecraft 1.21.1 Fabric & NeoForge Launcher">
+  <meta property="og:description" content="Ultra-lightweight, zero-bloat Minecraft launcher with instant support for 1.21.1 Fabric & NeoForge. Zero background RAM, official Mojang meta.">
+  <meta property="og:image" content="assets/logo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://xerlauncher.vercel.app/">
+  <meta property="twitter:title" content="XerLauncher — The Purest Minecraft 1.21.1 Fabric & NeoForge Launcher">
+  <meta property="twitter:description" content="Ultra-lightweight, zero-bloat Minecraft launcher with instant support for 1.21.1 Fabric & NeoForge.">
+  <meta property="twitter:image" content="assets/logo.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD Structured Data for Google Search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "XerLauncher",
+    "operatingSystem": "Windows 10, Windows 11 (64-bit)",
+    "applicationCategory": "GameApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "The purest, high-performance official Minecraft launcher for 1.21.1 Fabric and NeoForge. 0% background RAM, zero bloat, native Java 21 support.",
+    "author": {
+      "@type": "Person",
+      "name": "Mayank Mandrai"
+    },
+    "softwareVersion": "2.0.0",
+    "fileSize": "42.5 MB",
+    "downloadUrl": "downloads/Installer.exe"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Ambient Glow Background -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <img src="assets/logo.png" alt="XerLauncher Logo" class="brand-logo" width="38" height="38">
+        <span class="brand-text">XER<span>LAUNCHER</span></span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#compare" class="nav-link">Comparison</a>
+        <a href="#specs" class="nav-link">Requirements</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#download" class="btn btn-nav">
+          <span class="btn-glow"></span>
+          <span>Download v2.0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container">
+      
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span class="badge-text">v2.0 OFFICIAL RELEASE • 100% PURE • ZERO TL</span>
+        </div>
+
+        <h1 class="hero-title">
+          The Purest <span class="gradient-text">Minecraft Launcher</span> Ever Built.
+        </h1>
+
+        <p class="hero-desc">
+          Engineered by <strong>Mayank Mandrai</strong> for players who demand pure FPS. Lightning-fast boot times, zero background RAM, official Mojang integrity, and instant out-of-the-box support for <strong>Minecraft 1.21.1 Fabric & NeoForge</strong>.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta-group">
+          <a href="downloads/Installer.exe" class="btn btn-primary" id="btn-download-exe">
+            <svg class="btn-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <div class="btn-text-group">
+              <span class="btn-main-text">Download Installer</span>
+              <span class="btn-sub-text">Windows 10/11 • 42 MB (.exe)</span>
+            </div>
+          </a>
+
+          <a href="downloads/XerLauncher-v2.0-Setup.zip" class="btn btn-secondary" id="btn-download-zip">
+            <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="M10 4v4"></path>
+              <path d="M14 4v4"></path>
+              <line x1="2" y1="8" x2="22" y2="8"></line>
+            </svg>
+            <div class="btn-text-group">
+              <span class="btn-main-text">Download ZIP</span>
+              <span class="btn-sub-text">Portable Package (.zip)</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="hero-trust-bar">
+          <div class="trust-item">
+            <span class="trust-icon">✔</span>
+            <span>100% Free & Clean</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">✔</span>
+            <span>Zero Background Telemetry</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">✔</span>
+            <span>Java 21 Temurin Optimized</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Interactive Live Glass Mockup -->
+      <div class="hero-visual">
+        <div class="window-mockup">
+          <div class="mockup-header">
+            <div class="window-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="mockup-title">XerLauncher — v2.0 Official</div>
+            <div class="mockup-badge">0% Background RAM</div>
+          </div>
+
+          <div class="mockup-body">
+            <div class="mockup-sidebar">
+              <div class="mockup-field">
+                <label>PLAYER USERNAME</label>
+                <div class="mockup-input">Mayank7869</div>
+              </div>
+
+              <div class="mockup-field">
+                <label>MINECRAFT VERSION</label>
+                <div class="mockup-select">
+                  <span>1.21.1-Fabric</span>
+                  <span class="select-caret">▼</span>
+                </div>
+              </div>
+
+              <div class="mockup-field">
+                <div class="ram-header">
+                  <label>ALLOCATED RAM</label>
+                  <span class="ram-val">4.0 GB (4096 MB)</span>
+                </div>
+                <div class="mockup-slider">
+                  <div class="slider-fill"></div>
+                  <div class="slider-thumb"></div>
+                </div>
+              </div>
+
+              <div class="mockup-actions">
+                <div class="mockup-switch">
+                  <span class="switch-toggle active"></span>
+                  <span class="switch-label">Auto-Close on Launch</span>
+                </div>
+                <button class="mockup-launch-btn">LAUNCH GAME ▶</button>
+              </div>
+            </div>
+
+            <div class="mockup-sidepanel">
+              <div class="side-card">
+                <div class="side-card-title">Java Runtime</div>
+                <div class="side-card-value text-green">Temurin JDK 21 (Optimized)</div>
+              </div>
+
+              <div class="side-card">
+                <div class="side-card-title">Source Integrity</div>
+                <div class="side-card-value text-green">100% Official (Zero TL)</div>
+              </div>
+
+              <div class="side-card">
+                <div class="side-card-title">Quick Access</div>
+                <div class="side-btn">Open Mods Folder</div>
+                <div class="side-btn">Open Game Directory</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mockup-footer">
+            <span class="status-pulse"></span>
+            <span class="status-text">Ready to Play • Minecraft 1.21.1 Ready</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Metrics / Performance Counters -->
+  <section class="metrics-section">
+    <div class="container metrics-grid">
+      <div class="metric-card">
+        <div class="metric-value">0%</div>
+        <div class="metric-label">Background RAM</div>
+        <div class="metric-desc">Closes cleanly when game starts to free up memory for shaders.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">3.2s</div>
+        <div class="metric-label">Instant Boot Time</div>
+        <div class="metric-desc">Optimized G1GC flags eliminate startup freeze and lag.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">100%</div>
+        <div class="metric-label">Official Mojang Meta</div>
+        <div class="metric-desc">SHA-1 verified client JARs directly from Mojang & Fabric servers.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">1.21.1</div>
+        <div class="metric-label">Fabric & NeoForge</div>
+        <div class="metric-desc">Pre-configured mod loaders ready out-of-the-box.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Features Grid -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ENGINEERED FOR EXCELLENCE</span>
+        <h2 class="section-title">Built Different. Built For Gamers.</h2>
+        <p class="section-desc">Everything you need to run high-FPS Minecraft 1.21.1 without bloatware, spyware, or sluggish launchers.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon icon-cyan">⚡</div>
+          <h3 class="feature-title">Ultra-Fast JVM Tuning</h3>
+          <p class="feature-text">Pre-configured with enterprise G1GC flags, MaxGCPauseMillis=50, and tiered compilation to give maximum frames and zero stutter during intense render spikes.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-emerald">🛡️</div>
+          <h3 class="feature-title">100% Official & Clean</h3>
+          <p class="feature-text">Zero third-party telemetry, zero spyware, zero modified classes. We pull client jars and libraries directly from Mojang and Fabric meta APIs.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-blue">☕</div>
+          <h3 class="feature-title">Adoptium Java 21 Engine</h3>
+          <p class="feature-text">Deep integration with Eclipse Adoptium Temurin 21. Automatically detects and utilizes optimized 64-bit runtime without complex setup.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-purple">🎮</div>
+          <h3 class="feature-title">Fabric + NeoForge Ready</h3>
+          <p class="feature-text">Select between 1.21.1 Fabric and 1.21.1 NeoForge with a single click. Dedicated isolated mod directories keep your addons organized.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-amber">📦</div>
+          <h3 class="feature-title">Instant Setup Installer</h3>
+          <p class="feature-text">Our streamlined installer configures Windows shortcuts, native libraries, and profiles in seconds. No tech skills needed.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-pink">🚀</div>
+          <h3 class="feature-title">Low-Spec Friendly</h3>
+          <p class="feature-text">Whether you have 4GB RAM or 32GB RAM, adjust your memory allocation with a smooth slider and play with optimal memory headroom.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="compare-section" id="compare">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">UNBIASED BENCHMARK</span>
+        <h2 class="section-title">Why XerLauncher Destroys The Competition</h2>
+        <p class="section-desc">See how XerLauncher compares against traditional and commercial launchers.</p>
+      </div>
+
+      <div class="table-container">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Feature / Metric</th>
+              <th class="col-highlight">XerLauncher v2.0</th>
+              <th>Bloated Launchers</th>
+              <th>Standard Launcher</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Background RAM Usage</strong></td>
+              <td class="col-highlight text-green"><strong>0 MB</strong> (Auto-Close)</td>
+              <td class="text-red">250 MB - 600 MB</td>
+              <td class="text-yellow">~180 MB</td>
+            </tr>
+            <tr>
+              <td><strong>Startup Boot Speed</strong></td>
+              <td class="col-highlight text-green"><strong>Instant (~3s)</strong></td>
+              <td class="text-red">12s - 25s (Ads & Bloat)</td>
+              <td class="text-yellow">~8s</td>
+            </tr>
+            <tr>
+              <td><strong>Ads & Telemetry</strong></td>
+              <td class="col-highlight text-green"><strong>Zero (100% Pure)</strong></td>
+              <td class="text-red">High (Popups, Ads)</td>
+              <td class="text-yellow">Microsoft telemetry</td>
+            </tr>
+            <tr>
+              <td><strong>Pre-configured 1.21.1 Fabric</strong></td>
+              <td class="col-highlight text-green"><strong>Yes (One-Click)</strong></td>
+              <td class="text-yellow">Manual setup needed</td>
+              <td class="text-yellow">Manual installation</td>
+            </tr>
+            <tr>
+              <td><strong>Pre-configured 1.21.1 NeoForge</strong></td>
+              <td class="col-highlight text-green"><strong>Yes (One-Click)</strong></td>
+              <td class="text-yellow">Manual setup needed</td>
+              <td class="text-yellow">Manual installation</td>
+            </tr>
+            <tr>
+              <td><strong>JVM GC Optimization</strong></td>
+              <td class="col-highlight text-green"><strong>Built-in G1GC High-FPS</strong></td>
+              <td class="text-red">Default vanilla flags</td>
+              <td class="text-yellow">Basic flags</td>
+            </tr>
+            <tr>
+              <td><strong>VirusTotal Verification</strong></td>
+              <td class="col-highlight text-green"><strong>100% Clean</strong></td>
+              <td class="text-red">Flagged on several AVs</td>
+              <td class="text-green">Clean</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Hub Section -->
+  <section class="download-section" id="download">
+    <div class="container">
+      <div class="download-card-wrapper">
+        <div class="download-header">
+          <span class="section-tag">OFFICIAL RELEASES</span>
+          <h2 class="download-title">Download XerLauncher v2.0</h2>
+          <p class="download-subtitle">Compatible with Windows 10, Windows 11 (64-Bit). Fully tested & signed by Mayank Mandrai.</p>
+        </div>
+
+        <div class="download-grid">
+          <!-- Main Installer Card -->
+          <div class="dl-box featured">
+            <div class="dl-badge">RECOMMENDED</div>
+            <div class="dl-title">Standard Installer (.exe)</div>
+            <div class="dl-desc">Single-click setup wizard. Automatically configures desktop shortcuts, start menu, and all mod loader profiles.</div>
+            <div class="dl-meta">
+              <span>Size: <strong>42.5 MB</strong></span>
+              <span>•</span>
+              <span>Version: <strong>2.0.0</strong></span>
+              <span>•</span>
+              <span>Arch: <strong>x64</strong></span>
+            </div>
+            <a href="downloads/Installer.exe" class="btn btn-primary btn-full">
+              <span>Download Installer (v2.0)</span>
+              <span class="btn-arrow">▶</span>
+            </a>
+          </div>
+
+          <!-- Portable Zip Card -->
+          <div class="dl-box">
+            <div class="dl-title">Portable ZIP Package</div>
+            <div class="dl-desc">Extract anywhere and run. Ideal for USB drives, school/college PCs, or running without administrator privileges.</div>
+            <div class="dl-meta">
+              <span>Size: <strong>42.4 MB</strong></span>
+              <span>•</span>
+              <span>Format: <strong>.ZIP</strong></span>
+              <span>•</span>
+              <span>No Admin Needed</span>
+            </div>
+            <a href="downloads/XerLauncher-v2.0-Setup.zip" class="btn btn-secondary btn-full">
+              <span>Download ZIP Package</span>
+              <span class="btn-arrow">▶</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Release Notes Mini Box -->
+        <div class="release-notes-box">
+          <div class="rn-title">📌 What's New in v2.0:</div>
+          <ul class="rn-list">
+            <li>✔ Complete UI rewrite in CustomTkinter dark theme with vibrant neon styling.</li>
+            <li>✔ Official support for Minecraft 1.21.1 Fabric Loader (v0.19.5+) and NeoForge 1.21.1.</li>
+            <li>✔ High-speed multi-threaded asset & library download engine.</li>
+            <li>✔ Auto-Close switch saves up to 500MB RAM while playing.</li>
+            <li>✔ Zero TLauncher artifacts — complete fresh isolation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- System Requirements -->
+  <section class="specs-section" id="specs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">HARDWARE SPECIFICATIONS</span>
+        <h2 class="section-title">System Requirements</h2>
+        <p class="section-desc">XerLauncher is engineered to run on both budget laptops and high-end gaming rigs.</p>
+      </div>
+
+      <div class="specs-grid">
+        <div class="spec-card">
+          <h3 class="spec-type">Minimum Requirements</h3>
+          <ul class="spec-list">
+            <li><strong>OS:</strong> Windows 10 (64-bit) / Windows 11</li>
+            <li><strong>CPU:</strong> Intel Core i3-3210 / AMD A8-7600 APU</li>
+            <li><strong>RAM:</strong> 4 GB System Memory (2 GB Allocated)</li>
+            <li><strong>GPU:</strong> Intel HD Graphics 4000 / AMD Radeon R5</li>
+            <li><strong>Storage:</strong> 2 GB Available Space</li>
+            <li><strong>Java:</strong> Java 17+ or Java 21 (Temurin Recommended)</li>
+          </ul>
+        </div>
+
+        <div class="spec-card recommended">
+          <div class="rec-badge">OPTIMAL PERFORMANCE</div>
+          <h3 class="spec-type">Recommended Specs</h3>
+          <ul class="spec-list">
+            <li><strong>OS:</strong> Windows 11 64-bit (Latest update)</li>
+            <li><strong>CPU:</strong> Intel Core i5-10400 / AMD Ryzen 5 3600 or higher</li>
+            <li><strong>RAM:</strong> 8 GB - 16 GB System Memory (4 - 8 GB Allocated)</li>
+            <li><strong>GPU:</strong> NVIDIA GeForce GTX 1060 / AMD Radeon RX 580</li>
+            <li><strong>Storage:</strong> High-Speed NVMe SSD</li>
+            <li><strong>Java:</strong> Eclipse Adoptium Temurin JDK 21 (64-Bit)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">GOT QUESTIONS?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Clear answers to everything you need to know about XerLauncher.</p>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is XerLauncher 100% free to download and use?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, XerLauncher is 100% free with zero hidden paywalls, zero in-app purchases, and zero advertisements. It is created by Mayank Mandrai as a pure, community-first Minecraft launcher.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How does XerLauncher improve game performance (FPS)?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>XerLauncher injects fine-tuned JVM arguments (`-XX:+UseG1GC`, `-XX:MaxGCPauseMillis=50`, `-XX:G1HeapRegionSize=16M`, `-XX:+ParallelRefProcEnabled`), and automatically closes itself upon game startup so 100% of your system RAM and CPU cores are dedicated exclusively to Minecraft.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I add Sodium, Iris Shaders, and other Fabric mods?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely! Simply click the "Open Mods Folder" button on the launcher home screen and drop your `.jar` mod files (like Sodium, Lithium, Iris) directly into the folder. They will load automatically.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is Java 21 required? Where do I get it?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Minecraft 1.20.5+ and 1.21.1 require Java 21. We recommend installing the free, open-source <strong>Eclipse Adoptium Temurin 21</strong>, which XerLauncher automatically detects and optimizes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I play offline or on LAN without internet?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Once your version files are downloaded, you can disconnect from the internet and launch Minecraft anytime. Local LAN multiplayer also works seamlessly with friends.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-group">
+            <img src="assets/logo.png" alt="XerLauncher" width="32" height="32">
+            <span class="brand-text">XER<span>LAUNCHER</span></span>
+          </div>
+          <p class="footer-desc">The high-performance, official Minecraft 1.21.1 Fabric & NeoForge launcher. Crafted with passion by <strong>Mayank Mandrai</strong>.</p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <div class="footer-col-title">Downloads</div>
+            <a href="downloads/Installer.exe">Windows Installer (.exe)</a>
+            <a href="downloads/XerLauncher-v2.0-Setup.zip">Portable ZIP Package</a>
+            <a href="#specs">System Requirements</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-col-title">Navigation</div>
+            <a href="#features">Features</a>
+            <a href="#compare">Comparison</a>
+            <a href="#faq">FAQ</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 XerLauncher. Designed & Developed by <strong>Mayank Mandrai</strong>.</p>
+        <p class="footer-disclaimer">Disclaimer: XerLauncher is not an official Minecraft product and is not approved by or associated with Mojang or Microsoft.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
