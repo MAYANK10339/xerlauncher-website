@@ -1333,3 +1333,37 @@ h1, h2, h3, h4 {
 .faq-item.active .css-icon-plus::after {
   transform: rotate(90deg);
 }
+
+/* Store / Shopping Bag Icon */
+.css-icon-store {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #a855f7;
+  border-radius: 4px;
+  position: relative;
+  display: inline-block;
+  background: #14112c;
+  vertical-align: middle;
+}
+.css-icon-store::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 4px;
+  width: 10px;
+  height: 6px;
+  border: 2px solid #00e5ff;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+}
+.css-icon-store::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  width: 4px;
+  height: 2px;
+  background: #00e5ff;
+  border-radius: 1px;
+}
+
